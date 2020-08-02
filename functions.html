@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ /*
+ Una funcion es un bloque de codigo,
+ autocontennido que se puede definir una 
+ vez y ejecutar en cualquier momento.
+ Opcionalmete, una funcion puede aceptar
+ parametros y devolver un valor 
+
+ Las funciones en JS son objetos, un 
+ tipo especial de objeto;
+
+ Se dic que las funciones son ciudadanos 
+ de primera clase porque pueden asignarse a un 
+ valor, y pueden pasarse como argumentos
+ y usarse como un valor de retorno 
+
+ */
+
+ // FUNCION DECLARADA 
+
+ function estoEsUnaFuncion() {
+    console.log("Uno")
+    console.log("Dos")
+    console.log("Tres")  
+ }
+
+ estoEsUnaFuncion() // INVOCACION DE FUNCIONES
+
+ //FUNCION DECLARADA QUE RETORNA VALORES
+
+ function multiplicacion(x,y) {
+     return x*y
+ }
+ 
+ console.log(multiplicacion(3,4))
+
+ //----------------------------------------------------
+
+ funcionDeclarada() // Invocada antes de la funcion declarada
+
+ function funcionDeclarada() {
+     console.log("esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo incluso antes de que la funcion sea declarada")
+ }
+
+
+ //EJEMPLO DM, FUNCION QUE MODIFICA OBJETOS 
+
+ function myFunc(theObject) {
+     theObject.make = "Toyota";
+
+ }
+
+ let mycar = {make:"Honda", model: "Accord", year: 2000};
+ let x,y;
+
+ x = mycar.make;   // x toma el valor "Honda"
+ console.log(x);
+
+ myFunc(mycar);
+
+ y = mycar.make; // y toma el valor "Toyota"
+ console.log(y) // (la propiedad make fue cambida por la funcion)
+  
+ 
+ // FUNCIONES EXPRESADAS 
+
+ const funcionExpresada = function (){
+     console.log("Esto es una funcion expesada, es decir una funcion que se expreso como valor en una variable, si la invocamos antes de su declaracion JS nos dira: Cannot access 'funcionExpresada' before initialization")
+ }
+
+ funcionExpresada()
+
+ // EJEMPLO #1
+
+ let multiplicar = function(x) {return(x*3)}
+ console.log(multiplicar(3))
+ 
+ // EJEMPLO # 2
+
+ let square = function(number) {return number*number};
+ let v = square(4)
+ console.log(v)
+ 
+    </script>
+</body>
+</html>
+
+funcion expresada, cuando a una variable le asignamos una funcion anonima.
+
+funcion declarada

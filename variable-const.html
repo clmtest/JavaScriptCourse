@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* 
+
+        Primitivos: se accede directamete al valor
+
+        - string
+        - number
+        - boolean
+        - null
+        - undefined
+        - NaN
+
+        Compuestos: se accede a la referencia del valor
+
+        - object {}
+        - array []
+        - function ()
+        - class {}
+
+        */
+
+        let a
+        const PI = 3.1416
+        console.log(PI)
+        a = "Christian"
+        console.log(a)
+        //PI = 3.15 // JS no permite cambiar el contenido de valores primitivos, o volver variable el contenido de una constante.
+
+
+        const objeto = {
+            nombre: "Eliana",
+            edad: 25
+        }
+
+        const colores = ["Blanco","negro","verde"]
+
+        console.log(objeto)
+        console.log(colores)
+
+        objeto.correo = "pepe@hotmail.com"
+        colores.push("azul") // Push para agregar valores en array
+
+        console.log(objeto)
+        console.log(colores)
+
+        /* 
+        
+        si a lo largo del flujo de la aplicacion o programa va cambiar 
+        el valor de una variable, ejemplo que pase de strig a numero u objeto
+        deberiamos declararlo con let. 
+
+        si a lo largo del flujo tenemos una variable que siempre va ser un objeto u array 
+        y que lo unico que va cambiar es que se hace mas grande o mas pequeño utilizamos const
+        
+        Variable Variable: let 
+        Variable constante: const
+        
+        */
+
+
+
+
+
+    </script>
+
+</body>
+</html>

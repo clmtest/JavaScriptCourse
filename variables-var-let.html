@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables JS</title>
+
+</head>
+<body>
+  <h1>Variables JS</h1> 
+  <script>
+
+    var hola = "Hola Mundo"; // Variable de ambito global, (elevacion = mala practica)
+    let hello = "Hello world"; // Variable de ambito de bloque = Buena practica 
+    console.log(hola);
+    console.log(hello);   
+
+    console.log
+    ("********************var***********************") // Global, no respeta el comportamiento de bloque
+
+    var musica = "Rock"
+    console.log("Variable musica antes del bloque",musica);
+
+    {
+     var musica = "Pop"
+     console.log("Variable musica dentro del bloque",musica);
+    }
+    console.log("Variable musica despues del bloque",musica);
+
+    console.log
+    ("********************let***********************") // Bloque, Respeta el comportamiento de bloque 
+
+    let musica2 = "Rock"
+    console.log("Variable musica antes del bloque",musica2);
+
+    {
+     let musica2 = "Pop"
+     console.log("Variable musica dentro del bloque",musica2);
+    }
+    console.log("Variable musica despues del bloque",musica2);
+
+    //Conclusion: no utilizar var por buenas practicas
+    
+    
+  </script> 
+</body>
+</html>

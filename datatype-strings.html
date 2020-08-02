@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Data type STRING</h1> 
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+
+    <script>
+    
+    /* 
+    Objeto: Es una coleccion de informacion
+    
+    Propiedades: son caracteristicas o atributos que describen o definen algo del objeto
+    
+    Metodos: Son las acciones que el objeto hace, se puden diferenciar 
+    de las propiedades porque siempre terminan en parentesis, dentro de estos 
+    parentesis ellos pueden resivir datos para poder trabajar
+    */
+
+    // CADENA DE TEXTO AKA STRING
+    let nombre = "Christian"
+    let apellido = "Londono"
+    let saludo = new String("Hola Munso")
+    let texto = "Christian esta    aprendiendo JS con un curso en linea todos los dias en las noches"
+
+    console.log(nombre,apellido,saludo)
+    console.log(
+        nombre.length,
+        apellido.length,
+        saludo.length,
+        nombre.toUpperCase(),
+        apellido.toLowerCase(),
+        texto.includes("JS"),
+        texto.includes("Java"),
+        texto.trim(),
+        texto.split(" ")
+    )
+
+    // CONCATENAR 
+
+    let name = "Christian"
+    let lastname = "Londono"
+    let rewarads = "Hola mi nombre es " + name + " " + lastname + " ";
+
+    console.log(rewarads)
+
+    //INTERPOLACION DE VARIABLES
+   
+    let saludo2 = `Hola mi nombre es ${name} ${lastname}.`;
+    console.log(saludo2)
+
+     //TEMPLATE STRING ``
+
+    let ul =  "<ul><li>Primavera</li><li>Verano</li><li>Otoño</li><li>Invierno</li></ul>"
+        console.log(ul)
+
+    let ul2 = ` <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>`; 
+
+    console.log(ul2)
+
+    </script>
+</body>
+</html>

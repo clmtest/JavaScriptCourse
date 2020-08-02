@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+     //Operadores
+     //Aritmeticos: + - * / % 0
+    
+     let a = 5+(5-10)*3;
+     console.log(a)
+
+     //Relacionales
+     // >, <, >=, <=, ==, ===, !=, !==
+
+     console.log(8>9);
+     console.log(9>8);
+     console.log(8>=9);
+     console.log(9>=8);
+     console.log(7<=7);
+     console.log(7<7);
+
+     /* 
+     = 1 igual es asignacion de variable
+     == 2 iguales es comparacion de valores
+     === 3 iguales es comparacion de tipo de dato y de valor 
+     */
+
+     console.log(7==7);
+     console.log("7"==7)
+     console.log(0==false);
+
+     console.log(7===7);
+     console.log("7"===7);
+     console.log(0===false);   
+
+     //INCREMENTO - DECREMENTO
+
+     let i = 2;
+
+     console.log(i++); //imprime primero el valor y despues le suma 1
+     console.log(++i);
+
+     //i = i+2;
+     //i+=3;
+     //i-=3;
+     //i*=3;
+     //i/=2;
+    
+
+     //OPERADOR UNARIO
+
+     i++;
+     i--;
+     ++i; // no es buena practica 
+     --i; // no es buena practica 
+
+     console.log(i)
+
+     // OPERADORES LOGICOS 
+
+     /*
+     ! NOT: Niega, es decir lo que es verdadero lo vuelve falso y viceversa 
+     || Or: Cuando tengo 2 o mas condiciones, con que una se cumpla, es decir
+            sea verdadera, el OR sera verdadero.
+     &&And: cuando tengo 2 o mas condiciones, todas tienen que cumplirse, es 
+            decir ser verdaderas para que AND se valide
+     */
+
+     console.log(!true);
+     console.log(!false);
+     console.log((9 === 9)||("9" === 9));
+     console.log((9 === 9)&&("9" === 9));
+     console.log((9 === 9)&&("9" === "9"));
+
+    </script>
+</body>
+</html>

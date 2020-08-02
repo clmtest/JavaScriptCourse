@@ -1,0 +1,22 @@
+{
+
+    "nombre": "christian",
+        "edad": 27,
+        "soltero": false,
+        "hijos":true,
+        "contacto": {
+        "email":"cristian@gmail.com",
+        "facebook":"clm",
+        "celular":"235455236"
+        },
+        "carro": true,
+        "motos": true
+
+    }
+
+
+
+   
+
+
+
