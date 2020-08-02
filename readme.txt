@@ -1,2 +1,0 @@
-﻿hola esto es una prueba que se tiene que realizar
- esto tambien es una prueba direccionada al repositorio local. dale Git pull en el local y veras 
